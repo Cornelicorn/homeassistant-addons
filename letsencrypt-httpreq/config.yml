@@ -1,7 +1,7 @@
 name: "Let's Encrypt httpreq"
 description: "Manage certificate from Let's Encrypt with DNS httpreq"
-url: "https://github.com/home-assistant/addons-example/tree/main/letsencrypt-httpreq"
-version: "1.0.0"
+url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/letsencrypt-httpreq"
+version: "1.0.1"
 slug: letsencrypt-httpreq
 init: false
 boot: manual
