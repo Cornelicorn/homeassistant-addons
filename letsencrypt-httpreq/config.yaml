@@ -1,11 +1,11 @@
 name: "Let's Encrypt httpreq"
 description: "Manage certificate from Let's Encrypt with DNS httpreq"
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/letsencrypt-httpreq"
-version: "1.0.3"
+version: "1.0.5"
 slug: letsencrypt-httpreq
 init: false
 boot: manual
-image: "ghcr.io/Cornelicorn/homeassistant-addon-letsencrypt-httpreq-{arch}"
+image: "ghcr.io/cornelicorn/homeassistant-addon-letsencrypt-httpreq-{arch}"
 arch:
   - aarch64
   - amd64
