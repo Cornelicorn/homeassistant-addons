@@ -1,0 +1,25 @@
+---
+configuration:
+  domains:
+    name: Domains
+    description: >-
+      The domain names to issue certificates for, use "*.yourdomain.com" for
+      wildcard certificates. (Comma separated list)
+  email:
+    name: Email
+    description: The email address that will be registered for the certificate.
+  keyfile:
+    name: Private Key File
+    description: Path to where the Private Key File will be placed.
+  certfile:
+    name: Certificate File
+    description: Path to where the Certificate File will be placed.
+  httpreq_host:
+    name: HTTPREQ Host
+    description: Host for HTTPREQ query
+  httpreq_user:
+    name: HTTPREQ User
+    description: User for HTTPREQ query
+  httpreq_password:
+    name: HTTPREQ Password
+    description: Password for HTTPREQ query

@@ -1,0 +1,38 @@
+name: "Let's Encrypt httpreq"
+description: "Manage certificate from Let's Encrypt with DNS httpreq"
+url: "https://github.com/home-assistant/addons-example/tree/main/letsencrypt-httpreq"
+version: "1.0.0"
+slug: letsencrypt-httpreq
+init: false
+boot: manual
+image: "ghcr.io/Cornelicorn/homeassistant-addon-letsencrypt-httpreq-{arch}"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+map:
+  - ssl:rw
+  - share
+
+options:
+  domains:
+    - null
+  keyfile: privkey.pem
+  certfile: fullchain.pem
+  httpreq_host: null
+  quiet: true
+  staging: true
+
+schema:
+  domains: str
+  keyfile: str
+  certfile: str
+  httpreq_host: str
+  email: email?
+  httpreq_user: str?
+  httpreq_password: str?
+  quiet: bool
+  staging: bool
+startup: once

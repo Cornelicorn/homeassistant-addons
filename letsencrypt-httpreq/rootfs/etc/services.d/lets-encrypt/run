@@ -1,0 +1,27 @@
+#!/usr/bin/with-contenv bashio
+
+CERT_DIR=/data/letsencrypt
+
+KEYFILE="$(bashio::config 'keyfile')"
+CERTFILE="$(bashio::config 'certfile')"
+HTTPREQ_HOST="$(bashio::config 'httpreq_host')"
+export HTTPREQ_HOST
+
+bashio::log.info "Using Host: ${HTTPREQ_HOST}"
+
+if ! certbot --config /certbot.ini certonly
+then
+    bashio::log.error "Failed to get certificate"
+    bashio::log.info "$(cat /var/log/letsencrypt/letsencrypt.log)"
+    exit 1
+fi
+
+bashio::log.info "Got certificate"
+
+# Get the last modified cert directory and copy the cert and private key to store
+# shellcheck disable=SC2012
+CERT_DIR_LATEST="$(ls -td $CERT_DIR/live/*/ | head -1)"
+cp "${CERT_DIR_LATEST}privkey.pem" "/ssl/$KEYFILE"
+cp "${CERT_DIR_LATEST}fullchain.pem" "/ssl/$CERTFILE"
+
+bashio::log.info "Copied certificate"
