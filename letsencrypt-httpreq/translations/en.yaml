@@ -23,3 +23,9 @@ configuration:
   httpreq_password:
     name: HTTPREQ Password
     description: Password for HTTPREQ query
+  quiet:
+    name: Quiet Output
+    description: Pass --quiet to certbot
+  staging:
+    name: Staging
+    description: Use Let's Encrypt's staging server
