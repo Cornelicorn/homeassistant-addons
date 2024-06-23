@@ -31,6 +31,7 @@ This add-on uses a lego-style httpreq request against a configurable server to
 update the TXT value in DNS.
 
 The available config options are
+
 ```yaml
 httpreq_host: "https://example.com/api/lego"
 httpreq_user: ""
