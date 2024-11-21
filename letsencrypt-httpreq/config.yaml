@@ -1,7 +1,7 @@
 name: "Let's Encrypt httpreq"
 description: "Manage certificate from Let's Encrypt with DNS httpreq"
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/letsencrypt-httpreq"
-version: "1.1.0"
+version: "1.1.1"
 slug: letsencrypt-httpreq
 init: false
 boot: manual
@@ -30,7 +30,7 @@ schema:
   keyfile: str
   certfile: str
   httpreq_host: str
-  dns_propagation_delay: integer
+  dns_propagation_delay: int
   email: email?
   httpreq_user: str?
   httpreq_password: str?

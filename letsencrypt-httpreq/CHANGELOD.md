@@ -1,6 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 # Changelog
 
+## 1.1.1
+
+- Fix typo in type declaration
+
 ## 1.1.0
 
 - Add configurable DNS propagation delay
