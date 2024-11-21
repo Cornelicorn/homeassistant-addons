@@ -12,7 +12,7 @@ export DNS_PROPAGATION_DELAY
 bashio::log.info "Using Host: ${HTTPREQ_HOST}"
 bashio::log.info "Will sleep ${DNS_PROPAGATION_DELAY} seconds for propagation"
 
-if ! certbot -vvv --config /certbot.ini certonly
+if ! certbot --config /certbot.ini certonly
 then
     bashio::log.error "Failed to get certificate"
     bashio::log.info "$(cat /var/log/letsencrypt/letsencrypt.log)"

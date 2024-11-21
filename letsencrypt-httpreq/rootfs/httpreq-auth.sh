@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -x
+set -e
 
 /httpreq-lego.sh present "$HTTPREQ_HOST"
 
-sleep "$DNS_PROPAGATION_DELAY"
+sleep 30
