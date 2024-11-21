@@ -1,6 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 # Changelog
 
+## 1.1.2
+
+- Fix missing env variable
+
 ## 1.1.1
 
 - Fix typo in type declaration
