@@ -36,9 +36,12 @@ The available config options are
 httpreq_host: "https://example.com/api/lego"
 httpreq_user: ""
 httpreq_password: ""
+dns_propagation_delay: 30
 ```
 
 `httpreq_user` and `httpreq_password` are used for HTTP Basic Auth, if provided.
+`dns_propagation_delay` is the delay to wait for dns propagation after adding
+the records and before the validation is started.
 
 ### Configure certificate files
 
