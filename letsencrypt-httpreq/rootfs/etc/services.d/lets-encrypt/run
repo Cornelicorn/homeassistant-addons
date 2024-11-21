@@ -5,13 +5,14 @@ CERT_DIR=/data/letsencrypt
 KEYFILE="$(bashio::config 'keyfile')"
 CERTFILE="$(bashio::config 'certfile')"
 HTTPREQ_HOST="$(bashio::config 'httpreq_host')"
+export HTTPREQ_HOST
 DNS_PROPAGATION_DELAY="$(bashio::config 'dns_propagation_delay')"
-export HTTPREQ_HOST DNS_PROPAGATION_DELAY
+export DNS_PROPAGATION_DELAY
 
 bashio::log.info "Using Host: ${HTTPREQ_HOST}"
 bashio::log.info "Will sleep ${DNS_PROPAGATION_DELAY} seconds for propagation"
 
-if ! certbot --config /certbot.ini certonly
+if ! certbot -vvv --config /certbot.ini certonly
 then
     bashio::log.error "Failed to get certificate"
     bashio::log.info "$(cat /var/log/letsencrypt/letsencrypt.log)"
