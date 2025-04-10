@@ -19,7 +19,6 @@ keep-until-expiring = true
 expand = true
 agree-tos = true
 eff-email = false
-must-staple = true
 preferred-challenges = dns
 manual = true
 manual-auth-hook = /httpreq-auth.sh
