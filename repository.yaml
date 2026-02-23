@@ -1,3 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Cornelicorn Home Assistant add-on repository
 url: 'https://github.com/Cornelicorn/homeassistant-addons'
 maintainer: Cornelius Hoffmann <coding@volucra.de>
