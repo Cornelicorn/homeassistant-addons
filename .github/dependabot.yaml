@@ -5,3 +5,11 @@ updates:
     schedule:
       interval: weekly
       time: "06:00"
+  - package-ecosystem: "docker"
+    # Look for a `Dockerfile` in each directory
+    directories:
+      - spoolman
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+      time: "06:00"
