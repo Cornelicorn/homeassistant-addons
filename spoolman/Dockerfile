@@ -41,7 +41,6 @@ COPY --chown=app:app --from=builder /home/app/spoolman /home/app/spoolman
 RUN chown -R app:app /home/app
 WORKDIR /home/app/spoolman
 
-ENV SPOOLMAN_BASE_PATH=/app/eaf34b4d_spoolman
 ENV PATH="/home/app/spoolman/.venv/bin:${PATH}"
 
 EXPOSE 8000
