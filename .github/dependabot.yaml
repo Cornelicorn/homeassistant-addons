@@ -9,6 +9,7 @@ updates:
     # Look for a `Dockerfile` in each directory
     directories:
       - spoolman
+      - bambuddy
     # Check for updates once a week
     schedule:
       interval: "weekly"
