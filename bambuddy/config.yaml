@@ -2,7 +2,7 @@
 name: "Bambuddy"
 description: "A self-hosted print archive and management system for Bambu Lab 3D printers."
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/bambuddy"
-version: "1.0.0"
+version: "1.1.0"
 slug: bambuddy
 init: false
 panel_icon: mdi:printer-3d
