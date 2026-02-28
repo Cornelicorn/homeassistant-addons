@@ -30,7 +30,8 @@ FROM $BUILD_FROM
 
 RUN apk add --no-cache \
         gosu \
-        python3
+        python3 \
+        nginx
 
 RUN addgroup app -g 1000 && \
     adduser app -D -G app -u 1000 && \
@@ -39,9 +40,9 @@ RUN addgroup app -g 1000 && \
 
 COPY --chown=app:app --from=builder /home/app/spoolman /home/app/spoolman
 RUN chown -R app:app /home/app
-WORKDIR /home/app/spoolman
 
-ENV PATH="/home/app/spoolman/.venv/bin:${PATH}"
+# HEALTHCHECK --start-period=10m \
+#     CMD curl --fail http://127.0.0.1:8000 || exit 1
 
-EXPOSE 8000
-ENTRYPOINT ["/home/app/spoolman/entrypoint.sh"]
+
+COPY rootfs /

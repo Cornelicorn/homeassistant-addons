@@ -2,8 +2,10 @@
 name: "Spoolman"
 description: "Keep track of your inventory of 3D-printer filament spools."
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/spoolman"
-version: "1.0.2"
+version: "1.0.3"
 slug: spoolman
+init: false
+panel_icon: mdi:printer-3d-nozzle
 image: "ghcr.io/cornelicorn/homeassistant-addon-spoolman-{arch}"
 arch:
   - aarch64
@@ -12,6 +14,21 @@ map:
   - type: addon_config
     read_only: false
     path: /home/app/.local/share/spoolman
+  - type: ssl
+ports:
+  "80/tcp": 7912
+ports_description:
+  80/tcp: Web interface
 ingress: true
-ingress_port: 8000
+ingress_port: 9000
 ingress_stream: true
+
+options:
+  ssl: true
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+
+schema:
+  ssl: bool
+  certfile: str
+  keyfile: str
