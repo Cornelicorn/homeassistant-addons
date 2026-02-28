@@ -1,0 +1,9 @@
+#!/command/with-contenv bashio
+
+bashio::log.info "Starting spoolman"
+
+export PATH="/home/app/spoolman/.venv/bin:${PATH}"
+export SPOOLMAN_HOST=127.0.0.1
+chown -R app:app /home/app/.local/share/spoolman
+cd /home/app/spoolman
+exec /home/app/spoolman/entrypoint.sh
