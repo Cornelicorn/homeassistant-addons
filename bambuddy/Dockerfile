@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 
 # Used to copy app
-FROM ghcr.io/maziggy/bambuddy:0.2.1 AS original
+FROM ghcr.io/maziggy/bambuddy:0.2.1.1 AS original
 
 FROM $BUILD_FROM AS base
 
