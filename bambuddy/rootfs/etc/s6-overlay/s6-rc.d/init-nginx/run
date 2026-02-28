@@ -1,0 +1,21 @@
+#!/command/with-contenv bashio
+
+bashio::log.info "Preparing"
+
+mkdir -p /etc/nginx/servers
+
+
+# Generate direct access configuration, if enabled.
+admin_port="$(bashio::addon.port 80)"
+if bashio::var.has_value "${admin_port}"
+then
+    bashio::config.require.ssl
+    bashio::var.json \
+        certfile "$(bashio::config 'certfile')" \
+        keyfile "$(bashio::config 'keyfile')" \
+        port "80" \
+        ssl "^$(bashio::config 'ssl')" \
+        | tempio \
+            -template /etc/nginx/templates/direct.gtpl \
+            -out /etc/nginx/servers/direct.conf
+fi

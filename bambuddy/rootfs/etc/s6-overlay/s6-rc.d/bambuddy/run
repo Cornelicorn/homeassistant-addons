@@ -1,0 +1,11 @@
+#!/command/with-contenv bashio
+
+bashio::log.info "Starting bambuddy"
+
+export DATA_DIR=/config/data
+export LOG_DIR=/config/logs
+
+mkdir -p /config/data /config/logs
+
+cd /app
+exec /app/.venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --loop asyncio
