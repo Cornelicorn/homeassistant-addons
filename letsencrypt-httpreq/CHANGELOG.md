@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.7
+
+- Rebuild
+
 ## 1.1.6
 
 - Bump version for package updates
