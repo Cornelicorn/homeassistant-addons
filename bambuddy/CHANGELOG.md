@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.7
+
+- Bump bambuddy to [0.2.4](https://github.com/maziggy/bambuddy/releases/tag/v0.2.4).
+
 ## 1.1.6
 
 - Bump bambuddy to [0.2.3.2](https://github.com/maziggy/bambuddy/releases/tag/v0.2.3.2).
