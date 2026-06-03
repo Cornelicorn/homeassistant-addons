@@ -1,5 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.9
+
+- Bump bambuddy to [0.2.4.5](https://github.com/maziggy/bambuddy/releases/tag/v0.2.4.5).
+- [0.2.4.4](https://github.com/maziggy/bambuddy/releases/tag/v0.2.4.4) was a security update and was recommended to be applied immediately.
+
 ## 1.1.8
 
 - Bump bambuddy to [0.2.4.3](https://github.com/maziggy/bambuddy/releases/tag/v0.2.4.3).
