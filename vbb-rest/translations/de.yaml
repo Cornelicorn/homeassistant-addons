@@ -1,0 +1,18 @@
+---
+configuration:
+  ssl:
+    name: SSL
+    description: >-
+      SSL (HTTPS) auf dem freigegebenen Port aktivieren.
+  certfile:
+    name: Zertifikatsdatei
+    description: Die Zertifikatsdatei für SSL, gespeichert in /ssl/.
+  keyfile:
+    name: Private Schlüsseldatei
+    description: Die private Schlüsseldatei für SSL, gespeichert in /ssl/.
+  hostname:
+    name: Hostname
+    description: >-
+      Optionaler Hostname für Links in der OpenAPI-Spezifikation.
+      Hat keinen Einfluss darauf, wie die API erreichbar ist.
+      Standard ist localhost.

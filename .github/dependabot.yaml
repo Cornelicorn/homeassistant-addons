@@ -10,6 +10,7 @@ updates:
     directories:
       - spoolman
       - bambuddy
+      - vbb-rest
     # Check for updates once a week
     schedule:
       interval: "daily"

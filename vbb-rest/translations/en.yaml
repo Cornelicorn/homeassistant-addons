@@ -1,0 +1,17 @@
+---
+configuration:
+  ssl:
+    name: SSL
+    description: >-
+      Enable SSL (HTTPS) on the exposed port.
+  certfile:
+    name: Certificate File
+    description: The certificate file to use for SSL, stored in /ssl/.
+  keyfile:
+    name: Private Key File
+    description: The private key file to use for SSL, stored in /ssl/.
+  hostname:
+    name: Hostname
+    description: >-
+      Optional hostname used for links in the OpenAPI spec.
+      Does not affect how the API can be reached. Defaults to localhost.
