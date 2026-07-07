@@ -1,0 +1,12 @@
+#!/command/with-contenv bashio
+
+bashio::log.info "Starting valkey"
+
+# Cache HAFAS responses persistently across addon restarts via RDB
+# snapshots in /data; valkey also saves on graceful shutdown when
+# save points are configured.
+mkdir -p /data/valkey
+exec valkey-server \
+    --bind 127.0.0.1 \
+    --port 6379 \
+    --dir /data/valkey \
