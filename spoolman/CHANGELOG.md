@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.0.5
+
+- Update spoolman to [0.24.0](https://github.com/Donkie/Spoolman/releases/tag/v0.24.0)
+
 ## 1.0.4
 
 - Rebuild
