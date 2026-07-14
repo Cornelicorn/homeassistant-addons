@@ -4,7 +4,7 @@ ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23
 # with ERR_STREAM_PREMATURE_CLOSE (fixed in 24.18.0), and alpine 3.23's
 # nodejs package ships exactly 24.17.0. Use the official Node.js binaries
 # instead temporarely
-FROM node:24.18.0-alpine AS node
+FROM node:26.0.0-alpine AS node
 
 # Build vbb-rest from source so node_modules match the shipped node version
 FROM $BUILD_FROM AS builder
