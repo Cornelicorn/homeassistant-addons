@@ -2,11 +2,11 @@
 name: "VBB REST API"
 description: "An HTTP REST API for Berlin & Brandenburg (VBB) public transport."
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/vbb-rest"
-version: "1.0.2"
+version: "1.0.3"
 slug: vbb-rest
 init: false
 panel_icon: mdi:train
-#image: "ghcr.io/cornelicorn/homeassistant-addon-vbb-rest"
+image: "ghcr.io/cornelicorn/homeassistant-addon-vbb-rest"
 arch:
   - aarch64
   - amd64
