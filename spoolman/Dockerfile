@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23
+ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 
 # Used to copy app
 FROM ghcr.io/donkie/spoolman:0.24.0 AS original

@@ -2,7 +2,7 @@
 name: "Spoolman"
 description: "Keep track of your inventory of 3D-printer filament spools."
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/spoolman"
-version: "1.0.5"
+version: "1.0.6"
 slug: spoolman
 init: false
 panel_icon: mdi:printer-3d-nozzle
