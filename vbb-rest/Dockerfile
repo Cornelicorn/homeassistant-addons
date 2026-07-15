@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23
+ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 
 # Node.js 24.17.0 has a regression that breaks hafas-client's HTTPS requests
 # with ERR_STREAM_PREMATURE_CLOSE (fixed in 24.18.0), and alpine 3.23's
