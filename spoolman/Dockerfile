@@ -1,7 +1,7 @@
 ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 
 # Used to copy app
-FROM ghcr.io/donkie/spoolman:0.24.0 AS original
+FROM ghcr.io/donkie/spoolman:0.25.0 AS original
 
 # Used to build uv venv again with alpine base system
 FROM $BUILD_FROM AS builder
