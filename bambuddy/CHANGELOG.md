@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.2.5.1
+
+- Bump bambuddy to [1.2.5.1](https://github.com/maziggy/bambuddy/releases/tag/v1.2.5.1).
+
 ## 1.1.14
 
 - Bump base image to 3.24
