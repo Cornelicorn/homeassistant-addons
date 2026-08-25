@@ -2,7 +2,7 @@
 name: "VBB REST API"
 description: "An HTTP REST API for Berlin & Brandenburg (VBB) public transport."
 url: "https://github.com/Cornelicorn/homeassistant-addons/tree/main/vbb-rest"
-version: "1.0.3"
+version: "1.1.0"
 slug: vbb-rest
 init: false
 panel_icon: mdi:train
@@ -13,13 +13,13 @@ arch:
 map:
   - type: ssl
 ports:
-  "80/tcp": 3000
+  "80/tcp": null
 ports_description:
   80/tcp: HTTP REST API / documentation
 webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 
 options:
-  ssl: true
+  ssl: false
   certfile: fullchain.pem
   keyfile: privkey.pem
 
