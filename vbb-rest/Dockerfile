@@ -11,7 +11,7 @@ ARG VBB_REST_VERSION=6.0.7
 RUN apk add --no-cache \
         git \
         libstdc++ \
-        nodejs-current \
+        nodejs \
         npm
 
 RUN git clone \
