@@ -19,13 +19,9 @@ Follow these steps to get the add-on installed on your system:
 
 ## How to use
 
-After starting the add-on, the API and its bundled documentation are served on the
-exposed port (default `3000` on the host, mapped to port `80` in the container). For
-example:
-
-```text
-https://<your-home-assistant>:3000/stops/900100001/departures
-```
+After starting the add-on, the API and its bundled documentation are served at `http://eaf34b4d-vbb-rest:3000`
+(accessible from the home assistant host). You can use that host as the API endpoint in integrations.
+Exposing the port is possible, although using an SSL certificate is recommended in that case (option `ssl`).
 
 The API documentation is available at
 [github.com/derhuerst/vbb-rest/blob/6/docs/readme.md](https://github.com/derhuerst/vbb-rest/blob/6/docs/readme.md).

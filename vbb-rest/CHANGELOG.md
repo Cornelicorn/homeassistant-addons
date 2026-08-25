@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.0
+
+- *BREAKING:* Disable SSL by default and use internal networking, you need to update the connection url in the integration source code to `http://eaf34b4d-vbb-rest:3000` or manually enable the port mapping (and ssl) after updating.
+
 ## 1.0.3
 
 - Rebuild for overlooked commenting out of image name
