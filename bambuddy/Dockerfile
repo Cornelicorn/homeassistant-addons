@@ -1,7 +1,7 @@
 ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 
 # Used to copy app
-FROM ghcr.io/maziggy/bambuddy:1.2.5.5 AS original
+FROM ghcr.io/maziggy/bambuddy:1.2.5.6 AS original
 
 FROM $BUILD_FROM AS base
 
